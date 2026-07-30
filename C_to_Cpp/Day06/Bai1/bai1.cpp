@@ -29,10 +29,10 @@ class sinhvienit : public sinhvien{
 			diemcode=code;
 			diemtoan=toan;
 		}
-		float tinhdiem(){
+		float tinhdiem() override{
 			return (diemcode+diemtoan)/2;
 		}
-		void inthongtin(){
+		void inthongtin() override{
 			cout << "\nSinh vien :" << ten << " co ma sinh vien " << masv << " co diem tong ket la :" << tinhdiem();
 		}
 };
@@ -43,12 +43,12 @@ class sinhvienngonngu : public sinhvien{
 		sinhvienngonngu(string t,string msv,float ie):sinhvien(t,msv){
 			ielts=ie;
 		}
-		float tinhdiem(){
+		float tinhdiem() override{
 			if(ielts>=7)			return 10;
 			else if(ielts >=6.0)	return 8.5;
 			else					return 7.0;
 		}
-		void inthongtin(){
+		void inthongtin() override{
 			cout << "\nSinh vien :" << ten << " co ma sinh vien " << masv << " co diem tong ket la :" << tinhdiem();
 		}
 };
