@@ -1,0 +1,6 @@
+
+Danh sach hang hoa co so luong nho hon 10 la :
+Ma hang   ten hang            so luong    don gia     tong gia tri   
+hh02      thit ga             7           100         700            
+hh01      banh my             7           10          70             
+hh03      thit bo             2           10          20             
